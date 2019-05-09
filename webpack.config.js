@@ -29,7 +29,7 @@ const webpackConfig = {
   entry: './src/index.js',
   output: {
     publicPath: isProduction ? '/' : '',
-    path: `${__dirname}/dist`,
+    path: `${__dirname}/docs`,
     filename: 'index_[hash].js'
   },
   module: {
