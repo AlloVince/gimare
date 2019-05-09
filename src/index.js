@@ -13,7 +13,7 @@ function parseMeta(markdownText) {
   const splitMark = '---\n';
   if (!markdownText.startsWith(splitMark)) {
     return {
-      meta: null,
+      meta: {},
       content: markdownText
     }
   }
