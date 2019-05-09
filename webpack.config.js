@@ -1,26 +1,22 @@
 const webpack = require('webpack');
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 require('dotenv').config();
 const CopyPlugin = require('copy-webpack-plugin');
 
-
-const DLL_JS = process.env.DLL_JS;
 const isProduction = process.env.NODE_ENV && process.env.NODE_ENV.startsWith('production');
-
 const plugins = [
   new webpack.DefinePlugin({
     'process.env': JSON.stringify(Object.assign({ NODE_ENV: process.env.NODE_ENV }, {}))
   }),
   new CopyPlugin([
     { from: './node_modules/reveal.js/plugin', to: 'plugin' },
+    { from: './node_modules/reveal.js/css/theme', to: 'css/theme', ignore: ['*.scss', '*.md'] },
   ]),
 ];
 
 
 plugins.push(new HtmlWebpackPlugin({
   filename: 'index.html',
-  // favicon: path.resolve('./icons/favicon.ico'),
   template: 'template.html',
 }));
 

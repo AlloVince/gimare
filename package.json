@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": " webpack --mode production",
+    "build": "rm -rf docs/ && webpack --mode production",
     "dev": "webpack-dev-server --content-base dist/ --inline --hot",
     "semantic-release": "semantic-release",
     "lint": "eslint src/**/*.js"
@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "is-url": "^1.2.4",
+    "js-yaml": "^3.13.1",
     "reveal.js": "^3.8.0"
   },
   "devDependencies": {
