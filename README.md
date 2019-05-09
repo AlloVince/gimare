@@ -5,12 +5,12 @@ Gimare -  Convert any **Gi**st **Ma**rkdown file in to a slide show powered by *
 ## Try it out:
 
 ```
-https://AlloVince.github.com/gimare/?YOUR_GIST_ID
+https://allovince.github.com/gimare/?YOUR_GIST_ID
 ```
 
 ## View a demo:
 
-https://AlloVince.github.com/gimare/?40f75080097e2d3493fa7a9ef920c0f5
+https://allovince.github.com/gimare/?40f75080097e2d3493fa7a9ef920c0f5
 
 Check the [gist file](https://gist.github.com/AlloVince/40f75080097e2d3493fa7a9ef920c0f5) of this demo.
 
